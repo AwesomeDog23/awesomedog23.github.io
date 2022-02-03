@@ -254,3 +254,189 @@ title: GBA Emulator
   <h3>Diddy Kong<br>Racing</h3>
   </a>
 </div>
+</div>
+</div>
+<iframe style="width:100vw;height:100vh;max-width:none;position:absolute;top:0px;left:0px;" frameBorder="0" id="emuFrame" src="">
+</iframe>
+</body>
+<script>
+  document.getElementById("emuFrame").style.display="none";
+  window.frames[0].document.execCommand('Stop');
+  window.frames[0].stop();
+function startFunction1() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/tlozoot.html";
+  };
+}
+function startFunction2() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/tlozmm.html";
+  };
+}
+function startFunction3() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/pm.html";
+  };
+}
+function startFunction4() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/bk.html";
+  };
+}
+function startFunction5() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/dk64.html";
+  };
+}
+function startFunction6() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/mk64.html";
+  };
+}
+function startFunction7() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/fxz.html";
+  };
+}
+function startFunction8() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/ssb.html";
+  };
+}
+function startFunction9() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/mp.html";
+  };
+}
+function startFunction10() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/mp2.html";
+  };
+}
+function startFunction11() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/mp3.html";
+  };
+}
+function startFunction12() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/mt.html";
+  };
+}
+function startFunction13() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/ys.html";
+  };
+}
+function startFunction14() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/sf64.html";
+  };
+}
+function startFunction15() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/k64tcs.html";
+  };
+}
+function startFunction16() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/ps.html";
+  };
+}
+function startFunction17() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/pstad.html";
+  };
+}
+function startFunction18() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/pstad2.html";
+  };
+}
+function startFunction19() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/dm64.html";
+  };
+}
+function startFunction20() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/d64.html";
+  };
+}
+function startFunction21() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/ge007.html";
+  };
+}
+function startFunction22() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/mg.html";
+  };
+}
+function startFunction23() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/bt.html";
+  };
+}
+function startFunction24() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/dkr.html";
+  };
+}
+function runEmu() {
+  var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'shortcut icon';
+    link.href = 'emu/icon.png';
+    document.getElementsByTagName('head')[0].appendChild(link);
+}
+function rFunction() {
+  var x = document.getElementById("emuFrame");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  };
+  $("#emuFrame").on('load',function() {
+        document.title = document.getElementById("emuFrame").contentDocument.title;
+    });
+}
+function disableScroll() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  document.body.style.overflow = 'hidden';
+    scrollTop = 
+      window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = 
+      window.pageXOffset || document.documentElement.scrollLeft,
+
+        window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
+}
+</script>
+</html>
