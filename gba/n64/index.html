@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EndInternetCensorship</title>
+    <link rel="shortcut icon" type="image/png" href="https://eic-files.endinternetcensorship.repl.co/img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://eic-files.endinternetcensorship.repl.co/main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+      function navFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <style>
+    *{
+      text-decoration: none;
+    }
+
+    .tn {
+    width: 250px;
+    background-color: #1ac4c7;
+    border-radius: 25px;
+    border: 5px solid black;
+    box-shadow: 5px 5px 50px grey;
+    transition: all .2s ease-in-out; 
+    margin-left: 20px;
+    float: left;
+    }
+
+    .tn:hover{
+    transform: scale(1.1); 
+    }
+
+    .t{
+      padding-top: 15px;
+    }
+
+    .center{
+    margin: 0 auto;
+    width: 1150px;
+    }
+
+    img{
+      width: 225px;
+    }
+
+    .tn img{
+      height: 174px;
+    }
+    </style>
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="https://home.endinternetcensorship.repl.co">Home</a>
+    <a href="https://proxy.endinternetcensorship.repl.co/">Proxy</a>
+    <a href="https://games.endinternetcensorship.repl.co">Games</a>
+    <div class="dropdown" style="background-color:#04AA6D;">
+      <button class="dropbtn">Retro
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="https://gba.endinternetcensorship.repl.co">GBA</a>
+        <a href="/" class="active">N64</a>
+        <a href="https://ds-games.endinternetcensorship.repl.co" id="fL">DS</a>
+      </div>
+    </div>
+    <a href="https://about.endinternetcensorship.repl.co" id="last">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="navFunction()">&#9776;</a>
+  </div>
+  <header style="padding-left: 10px">
+    <img src="https://eic-files.endinternetcensorship.repl.co/img/logo.png" alt="logo" style="float: left; width: 50px; padding-right: 5px;">
+    <h1>EndInternetCensorship</h1>
+  </header>
+<div class="container" style="margin-top: 0; margin: auto;">
+<p style="margin-bottom: 50px;">N64 Games</p>
+<div class="center">
+<div class="tn">
+  <a onclick="startFunction1();runEmu();rFunction();disableScroll();">
+  <img src="img/lozoot.webp" class="t" alt="boxart"><hr>
+  <h3>The Legend Of Zelda:<br>Ocarina Of Time</h3>
+  </a>
+</div>
+<div class="tn">
+  <a onclick="startFunction2();runEmu();rFunction();disableScroll();" target="_blank">
+  <img src="img/tlozmm.webp" class="t" alt="boxart"><hr>
+  <h3>The Legend Of Zelda:<br>Majora's Mask</h3>
+  </a>
+</div>
+<div class="tn">
+  <a onclick="startFunction3();runEmu();rFunction();disableScroll();" target="_blank">
+  <img src="img/pm.webp" class="t" alt="boxart"><hr>
+  <h1>Paper Mario</h1>
+  </a>
+</div>
+<div class="tn" style="margin-bottom:30px;">
+  <a onclick="startFunction4();runEmu();rFunction();disableScroll();" target="_blank">
+  <img src="img/bk.webp" class="t" alt="boxart"><hr>
+  <h1>Banjo-Kazooie</h1>
+  </a>
+</div>
+<div class="tn">
+  <a onclick="startFunction5();runEmu();rFunction();disableScroll();" target="_blank">
+  <img src="img/dk64.webp" class="t" alt="boxart"><hr>
+  <h3>Donkey<br>Kong 64</h3>
+  </a>
+</div>
+<div class="tn">
+  <a onclick="startFunction6();runEmu();rFunction();disableScroll();" target="_blank">
+  <img src="img/mk64.webp" class="t" alt="boxart"><hr>
+  <h1>Mario Kart 64</h1>
+  </a>
+</div>
+<div class="tn">
+  <a onclick="startFunction7();runEmu();rFunction();disableScroll();" target="_blank">
+  <img src="img/fzx.webp" class="t" alt="boxart"><hr>
+  <h1>F-Zero X</h1>
+  </a>
+</div>
+<div class="tn" style="margin-bottom:30px;">
+  <a onclick="startFunction8();runEmu();rFunction();disableScroll();" target="_blank">
+  <img src="img/ssb.webp" class="t" alt="boxart"><hr>
+  <h3>Super<br>Smash Bros.</h3>
+  </a>
+</div>
+<div class="tn">
+  <a onclick="startFunction9();runEmu();rFunction();disableScroll();" target="_blank">
+  <img src="img/mp.webp" class="t" alt="boxart"><hr>
+  <h1>Mario Party</h1>
+  </a>
+</div>
+<div class="tn">
+  <a onclick="startFunction10();runEmu();rFunction();disableScroll();" target="_blank">
+  <img src="img/mp2.webp" class="t" alt="boxart"><hr>
+  <h1>Mario Party 2</h1>
+  </a>
+</div>
+<div class="tn">
+  <a onclick="startFunction11();runEmu();rFunction();disableScroll();" target="_blank">
+  <img src="img/mp3.webp" class="t" alt="boxart"><hr>
+  <h1>Mario Party 3</h1>
+  </a>
+</div>
+<div class="tn" style="margin-bottom: 30px;">
+  <a onclick="startFunction12();runEmu();rFunction();disableScroll();" target="_blank">
+  <img src="img/mt.webp" class="t" alt="boxart"><hr>
+  <h1>Mario Tennis</h1>
+  </a>
+</div>
+<div class="tn">
+  <a onclick="startFunction13();runEmu();rFunction();disableScroll();" target="_blank">
+  <img src="img/ys.webp" class="t" alt="boxart"><hr>
+  <h1>Yoshi's Story</h1>
+  </a>
+</div>
+<div class="tn">
+  <a onclick="startFunction14();runEmu();rFunction();disableScroll();" target="_blank">
+  <img src="img/sf64.webp" class="t" alt="boxart"><hr>
+  <h1>Star Fox 64</h1>
+  </a>
+</div>
+<div class="tn">
+  <a onclick="startFunction15();runEmu();rFunction();disableScroll();" target="_blank">
+  <img src="img/k64tcs.webp" class="t" alt="boxart"><hr>
+  <h3>Kirby 64:<br>The Crystal Shards</h3>
+  </a>
+</div>
+<div class="tn" style="margin-bottom:30px;">
+  <a onclick="startFunction16();runEmu();rFunction();disableScroll();" target="_blank">
+  <img src="img/ps.webp" class="t" alt="boxart"><hr>
+  <h1>Pokemon Snap</h1>
+  </a>
+</div>
+<div class="tn">
+  <a onclick="startFunction17();runEmu();rFunction();disableScroll();" target="_blank">
+  <img src="img/pstad.webp" class="t" alt="boxart"><hr>
+  <h3>Pokemon<br>Stadium</h3>
+  </a>
+</div>
+<div class="tn">
+  <a onclick="startFunction18();runEmu();rFunction();disableScroll();" target="_blank">
+  <img src="img/pstad2.webp" class="t" alt="boxart"><hr>
+  <h3>Pokemon<br>Stadium 2</h3>
+  </a>
+</div>
+<div class="tn">
+  <a onclick="startFunction19();runEmu();rFunction();disableScroll();" target="_blank">
+  <img src="img/dm64.webp" class="t" alt="boxart"><hr>
+  <h1>Dr. Mario 64</h1>
+  </a>
+</div>
+<div class="tn" style="margin-bottom:30px;">
+  <a onclick="startFunction20();runEmu();rFunction();disableScroll();" target="_blank">
+  <img src="img/d64.webp" class="t" alt="boxart"><hr>
+  <h1>Doom 64</h1>
+  </a>
+</div>
+<div class="tn">
+  <a onclick="startFunction21();runEmu();rFunction();disableScroll();" target="_blank">
+  <img src="img/ge007.webp" class="t" alt="boxart"><hr>
+  <h1>GoldenEye 007</h1>
+  </a>
+</div>
+<div class="tn">
+  <a onclick="startFunction22();runEmu();rFunction();disableScroll();" target="_blank">
+  <img src="img/mg.webp" class="t" alt="boxart"><hr>
+  <h1>Mario Golf</h1>
+  </a>
+</div>
+<div class="tn">
+  <a onclick="startFunction23();runEmu();rFunction();disableScroll();" target="_blank">
+  <img src="img/bt.webp" class="t" alt="boxart"><hr>
+  <h1>Banjo-Tooie</h1>
+  </a>
+</div>
+<div class="tn" style="margin-bottom:30px;">
+  <a onclick="startFunction24();runEmu();rFunction();disableScroll();" target="_blank">
+  <img src="img/dkr.webp" class="t" alt="boxart"><hr>
+  <h3>Diddy Kong<br>Racing</h3>
+  </a>
+</div>
+</div>
+</div>
+<iframe style="width:100vw;height:100vh;max-width:none;position:absolute;top:0px;left:0px;" frameBorder="0" id="emuFrame" src="">
+</iframe>
+</body>
+<script>
+  document.getElementById("emuFrame").style.display="none";
+  window.frames[0].document.execCommand('Stop');
+  window.frames[0].stop();
+function startFunction1() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/tlozoot.html";
+  };
+}
+function startFunction2() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/tlozmm.html";
+  };
+}
+function startFunction3() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/pm.html";
+  };
+}
+function startFunction4() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/bk.html";
+  };
+}
+function startFunction5() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/dk64.html";
+  };
+}
+function startFunction6() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/mk64.html";
+  };
+}
+function startFunction7() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/fxz.html";
+  };
+}
+function startFunction8() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/ssb.html";
+  };
+}
+function startFunction9() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/mp.html";
+  };
+}
+function startFunction10() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/mp2.html";
+  };
+}
+function startFunction11() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/mp3.html";
+  };
+}
+function startFunction12() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/mt.html";
+  };
+}
+function startFunction13() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/ys.html";
+  };
+}
+function startFunction14() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/sf64.html";
+  };
+}
+function startFunction15() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/k64tcs.html";
+  };
+}
+function startFunction16() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/ps.html";
+  };
+}
+function startFunction17() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/pstad.html";
+  };
+}
+function startFunction18() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/pstad2.html";
+  };
+}
+function startFunction19() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/dm64.html";
+  };
+}
+function startFunction20() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/d64.html";
+  };
+}
+function startFunction21() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/ge007.html";
+  };
+}
+function startFunction22() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/mg.html";
+  };
+}
+function startFunction23() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/bt.html";
+  };
+}
+function startFunction24() {
+  for (let i = 0; i < frames.length; i++) {
+    const frames = window.frames;
+    frames[i].location = "emu/dkr.html";
+  };
+}
+function runEmu() {
+  var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'shortcut icon';
+    link.href = 'emu/icon.png';
+    document.getElementsByTagName('head')[0].appendChild(link);
+}
+function rFunction() {
+  var x = document.getElementById("emuFrame");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  };
+  $("#emuFrame").on('load',function() {
+        document.title = document.getElementById("emuFrame").contentDocument.title;
+    });
+}
+function disableScroll() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  document.body.style.overflow = 'hidden';
+    scrollTop = 
+      window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = 
+      window.pageXOffset || document.documentElement.scrollLeft,
+
+        window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
+}
+</script>
+</html>
